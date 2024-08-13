@@ -5,7 +5,7 @@ Utilities for visualizing the data
 import matplotlib.pyplot as plt
 import numpy as np
 
-def visualize_mel_spectrogram(mel_spectrogram, width=10, show_axes=True):
+def visualize_mel_spectrogram(mel_spectrogram, width=10, show_axes=True, show=True):
     fig = plt.figure(figsize=(width, 4))
     ax = fig.add_subplot(111)
     ax.imshow(mel_spectrogram[0], aspect='auto', origin='lower', cmap='viridis')
@@ -13,10 +13,13 @@ def visualize_mel_spectrogram(mel_spectrogram, width=10, show_axes=True):
     if not show_axes:
         ax.set_axis_off()
 
-    plt.show()
-    plt.close()
+    if show:
+        plt.show()
+        plt.close()
 
-def visualize_waveform(waveform, sample_rate, width=10, show_axes=True):
+    return fig, ax
+
+def visualize_waveform(waveform, sample_rate, width=10, show_axes=True, show=True):
     fig = plt.figure(figsize=(width, 4))
     ax = fig.add_subplot(111)
 
@@ -33,5 +36,8 @@ def visualize_waveform(waveform, sample_rate, width=10, show_axes=True):
     if not show_axes:
         ax.set_axis_off()
 
-    plt.show()
-    plt.close()
+    if show:
+        plt.show()
+        plt.close()
+
+    return fig, ax

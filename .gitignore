@@ -5,6 +5,7 @@
 /mtg_mel/
 /mtg_github/
 /genres
+/gtzan_expansion
 
 # Backups of output folders (We commit the main one. Models are small)
 /output_*
