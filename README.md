@@ -9,7 +9,7 @@ Up to the section titled "High Level Classifier Training Loop", you should run e
 
 This project provides scripts to train a contrastive model on the MTG dataset. The contrastive model is used to learn representations of music tracks that can be used for tasks like music genre classification, music recommendation, and other audio-related tasks.
 
-Pretrained Models can be found [https://drive.google.com/drive/folders/1gqYGBAECBNKzyEfkcmb7Uh9Otz_X82I1?usp=sharing](here.)
+Pretrained Models can be found [here.](https://drive.google.com/drive/folders/1gqYGBAECBNKzyEfkcmb7Uh9Otz_X82I1?usp=sharing)
 
 ## Training the Contrastive Model
 
