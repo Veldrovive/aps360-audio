@@ -180,6 +180,3 @@ python train_classification_model_n_plots.py --batch_size 128 --learning_rate 0.
 
 - Make sure the datasets (MTG and GTZAN) are properly prepared and available before running the training scripts.
 - Experiment with different parameters to optimize the model performance.
-
-
-```
